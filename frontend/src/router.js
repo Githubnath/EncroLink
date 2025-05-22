@@ -6,7 +6,14 @@ import Verify from './pages/Verify';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import AdminPanel from './components/Dashboard/AdminPanel';
-import Contact from './pages/Contact'; // Added Contact import
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound'; // Create this file
+
+// Example protected route wrapper (replace with real auth logic)
+const ProtectedRoute = ({ element }) => {
+  const isAuthenticated = true; // Replace with actual check
+  return isAuthenticated ? element : <Login />;
+};
 
 const Router = () => (
   <Routes>
@@ -15,8 +22,9 @@ const Router = () => (
     <Route path="/register" element={<Register />} />
     <Route path="/profile" element={<Profile />} />
     <Route path="/verify/:token" element={<Verify />} />
-    <Route path="/admin" element={<AdminPanel />} />
-    <Route path="/contact" element={<Contact />} /> {/* Contact route */}
+    <Route path="/contact" element={<Contact />} />
+    <Route path="/admin" element={<ProtectedRoute element={<AdminPanel />} />} />
+    <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
   </Routes>
 );
 
