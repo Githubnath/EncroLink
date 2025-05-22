@@ -11,7 +11,7 @@ and includes user registration, verification, encrypted message routing, and a s
 - End-to-end encrypted messaging routed via email
 - Secure admin dashboard to manage users and messages
 - Modern, sleek, and responsive frontend built with React and Tailwind CSS
-- Backend powered by Node.js, Express, MongoDB, and Nodemailer.
+- Backend powered by Node.js, Express, MongoDB, and Nodemailer
 
 ## Project Structure
 
