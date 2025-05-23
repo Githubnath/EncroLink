@@ -56,7 +56,7 @@ Run the backend server:
 npm run dev
 
 
-## Frontend
+Frontend
 Install dependencies:
 
 cd frontend
@@ -71,7 +71,7 @@ npm run dev
 Open your browser and navigate to http://localhost:5173 (default Vite port).
 
 
-## Features
+Features
 
 - User registration & verification via email
 - Encrypted message delivery
@@ -80,7 +80,7 @@ Open your browser and navigate to http://localhost:5173 (default Vite port).
 - Fully responsive and animated UI using React + Tailwind CSS
 - Backend built with Node.js + Express + MongoDB
 
-## Technologies Used
+Technologies Used
 
 - Frontend: React, React Router DOM,  Tailwind CSS, Vite
 - Backend: Node.js, Express, MongoDB, SendGrid,  Nodemailer for email service
@@ -92,9 +92,9 @@ Open your browser and navigate to http://localhost:5173 (default Vite port).
 - Crypto for encryption
 
 
-## Setup Instructions
+Setup Instructions
 
-### Backend
+ Backend
 
 ```bash
 cd backend
