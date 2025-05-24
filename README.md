@@ -1,4 +1,4 @@
-# EncroLink.
+# EncroLink
 
 EncroLink is a secure, futuristic platform that enables users to register and receive encrypted messages without 
 exposing their personal contact information. It leverages a third-party email provider for secure message delivery
