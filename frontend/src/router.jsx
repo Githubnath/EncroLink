@@ -7,7 +7,8 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import AdminPanel from './components/Dashboard/AdminPanel';
 import Contact from './pages/Contact';
-import NotFound from './pages/NotFound'; // Create this file
+import About from './pages/About';           // Added About import
+import NotFound from './pages/NotFound';     // Create this file
 
 // Example protected route wrapper (replace with real auth logic)
 const ProtectedRoute = ({ element }) => {
@@ -23,8 +24,9 @@ const Router = () => (
     <Route path="/profile" element={<Profile />} />
     <Route path="/verify/:token" element={<Verify />} />
     <Route path="/contact" element={<Contact />} />
+    <Route path="/about" element={<About />} />          {/* Added About route */}
     <Route path="/admin" element={<ProtectedRoute element={<AdminPanel />} />} />
-    <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
+    <Route path="*" element={<NotFound />} />             {/* Catch-all route */}
   </Routes>
 );
 
